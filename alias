@@ -1,0 +1,3 @@
+alias go="gnome-open"
+alias diff="colordiff"
+alias plz="sudo"

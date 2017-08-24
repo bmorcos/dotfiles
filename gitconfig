@@ -1,0 +1,30 @@
+[user]
+  name = bmorcos
+  email = morcos.ben@gmail.com
+
+[alias]
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  st = status -s
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  pager = true
+  status = auto
+  ui = auto
+
+[color "status"]
+  added = green bold
+  changed = red
+  untracked = yellow
+
+[pull]
+  rebase = true
+
+[push]
+  default = simple
+
+[fetch]
+  prune = true
+

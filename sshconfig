@@ -1,0 +1,7 @@
+Host jane
+  HostName jane.uwaterloo.ca
+  User bmorcos
+
+Host hex
+  HostName hex.uwaterloo.ca
+  User bmorcos
