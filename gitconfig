@@ -5,6 +5,10 @@
 [alias]
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   st = status -s
+  discard = reset --hard
+  subup = submodule update --init --recursive
+  delbr = push origin --delete
+  fpush = push --force-with-lease
 
 [color]
   branch = auto
@@ -16,8 +20,26 @@
 
 [color "status"]
   added = green bold
-  changed = red
+  changed = red bold
   untracked = yellow
+
+[color "branch"]
+  current = green bold
+  local = cyan
+  remote = magenta
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+
+[diff]
+  mnemonicPrefix = True
+
+[rebase]
+  autosquash = true
 
 [pull]
   rebase = true
