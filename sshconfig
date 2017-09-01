@@ -5,3 +5,11 @@ Host jane
 Host hex
   HostName hex.uwaterloo.ca
   User bmorcos
+
+Host roxy
+  HostName rocinante.eng.uwaterloo.ca
+  User bmorcos
+
+Host aga
+  HostName agamemnon.eng.uwaterloo.ca
+  User bmorcos
