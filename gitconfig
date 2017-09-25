@@ -22,21 +22,22 @@
   added = green bold
   changed = red bold
   untracked = yellow
+  unmerged = red reverse
 
 [color "branch"]
   current = green bold
-  local = cyan
-  remote = magenta
+  local = green
+  remote = red
 
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
+  meta = cyan bold
+  frag = white dim
   old = red bold
   new = green bold
   whitespace = red reverse
 
 [diff]
-  mnemonicPrefix = True
+  mnemonicprefix = True
 
 [rebase]
   autosquash = true
