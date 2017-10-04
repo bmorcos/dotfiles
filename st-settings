@@ -30,7 +30,7 @@
 		"*.sublime-workspace",
 		"*.py.cfg"
 	],
-	"font_size": 10,
+	"font_size": 11,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -41,8 +41,9 @@
 		"draw_normal",
 		"draw_active"
 	],
+	"tab_size": 4,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"tab_size": 4
+    "translate_tabs_to_spaces": true
 }
