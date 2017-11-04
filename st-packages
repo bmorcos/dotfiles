@@ -8,6 +8,7 @@
 		"AutoPEP8",
 		"LaTeXTools",
 		"Package Control",
+		"Python PEP8 Autoformat",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-pep8",
