@@ -1,15 +1,35 @@
 Host jane
   HostName jane.uwaterloo.ca
   User bmorcos
+  PubkeyAuthentication no
 
 Host hex
   HostName hex.uwaterloo.ca
   User bmorcos
+  PubkeyAuthentication no
 
 Host roxy
   HostName rocinante.eng.uwaterloo.ca
   User bmorcos
+  PubkeyAuthentication no
 
 Host aga
   HostName agamemnon.eng.uwaterloo.ca
   User bmorcos
+  PubkeyAuthentication no
+
+Host de1
+  HostName 10.162.177.236
+  User root
+  PubkeyAuthentication no
+  Ciphers aes256-ctr
+
+Host lego
+  HostName ev3dev.local
+  User robot
+  PubkeyAuthentication no
+
+Host pynq
+  HostName 10.162.177.99
+  User xilinx
+  PubkeyAuthentication no

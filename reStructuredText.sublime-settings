@@ -1,0 +1,6 @@
+// These settings override both User and Default settings for the reStructuredText syntax
+{
+    // The number of spaces a tab is considered equal to
+    "tab_size": 3
+
+}

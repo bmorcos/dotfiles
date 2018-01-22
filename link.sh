@@ -10,3 +10,5 @@ ln -sf $PWD/chrome-remote-desktop /opt/google/chrome-remote-desktop/chrome-remot
 ln -sf $PWD/st-settings $HOME/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 ln -sf $PWD/st-packages "$HOME/.config/sublime-text-3/Packages/User/Package Control.sublime-settings"
 ln -sf $PWD/C.sublime-settings "$HOME/.config/sublime-text-3/Packages/User/C.sublime-settings"
+ln -sf $PWD/C++.sublime-settings "$HOME/.config/sublime-text-3/Packages/User/C++.sublime-settings"
+ln -sf $PWD/reStructuredText.sublime-settings "$HOME/.config/sublime-text-3/Packages/User/reStructuredtext.sublime-settings"
