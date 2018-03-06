@@ -10,6 +10,8 @@
 		"Package Control",
 		"SublimeCodeIntel",
 		"SublimeLinter",
+		"SublimeLinter-cppcheck",
+		"SublimeLinter-cpplint",
 		"SublimeLinter-pep8",
 		"SystemVerilog"
 	]
