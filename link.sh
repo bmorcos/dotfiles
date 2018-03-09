@@ -1,14 +1,26 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Adapted from tbekolay's scripts
 
-ln -sf $PWD/alias $HOME/.alias
-ln -sf $PWD/sshconfig $HOME/.ssh/config
-ln -sf $PWD/gitconfig $HOME/.gitconfig
-ln -sf $PWD/tmux.conf $HOME/.tmux.conf
-ln -sf $PWD/ordering-override.keyfile /usr/share/indicator-application/ordering-override.keyfile
-ln -sf $PWD/chrome-remote-desktop-session $HOME/.chrome-remote-desktop-session
-ln -sf $PWD/chrome-remote-desktop /opt/google/chrome-remote-desktop/chrome-remote-desktop
-ln -sf $PWD/st-settings $HOME/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-ln -sf $PWD/st-packages "$HOME/.config/sublime-text-3/Packages/User/Package Control.sublime-settings"
-ln -sf $PWD/C.sublime-settings "$HOME/.config/sublime-text-3/Packages/User/C.sublime-settings"
-ln -sf $PWD/C++.sublime-settings "$HOME/.config/sublime-text-3/Packages/User/C++.sublime-settings"
-ln -sf $PWD/reStructuredText.sublime-settings "$HOME/.config/sublime-text-3/Packages/User/reStructuredtext.sublime-settings"
+source setup_tools.sh
+
+declare -A TARGETS
+TARGETS[alias]=.alias
+TARGETS[sshconfig]=.ssh/config
+TARGETS[gitconfig]=.gitconfig
+TARGETS[tmux.conf]=.tmux.conf
+TARGETS[ordering-override.keyfile]=/usr/share/indicator-application/ordering-override.keyfile
+TARGETS[st-packages]=".config/sublime-text-3/Packages/User/Package Control.sublime-settings"
+TARGETS[st-settings]=.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+TARGETS[C.sublime-settings]=.config/sublime-text-3/Packages/User/C.sublime-settings
+TARGETS[C++.sublime-settings]=.config/sublime-text-3/Packages/User/C++.sublime-settings
+TARGETS[reStructuredText.sublime-settings]=.config/sublime-text-3/Packages/User/reStructuredText.sublime-settings
+
+for DOTFILE in "${!TARGETS[@]}"; do
+    SRC="$PWD/$DOTFILE"
+    if [[ ${TARGETS[$DOTFILE]:0:1} == '/' ]]; then
+        DST=${TARGETS[$DOTFILE]}
+    else
+        DST="$HOME/${TARGETS[$DOTFILE]}"
+    fi
+    checkandlink "$SRC" "$DST"
+done
