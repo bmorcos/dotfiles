@@ -51,3 +51,5 @@
 [fetch]
   prune = true
 
+[core]
+	editor = vi
