@@ -7,6 +7,10 @@ set undolevels=100 " Undo history
 set number " Show line numbers
 set showmatch " Show matching bracket
 syntax enable
+colorscheme monokai
+hi Normal ctermbg=none
+hi NonText ctermbg=none
+hi LineNr ctermbg=none
 set encoding=utf-8
 set expandtab " Use spaces
 set smarttab
