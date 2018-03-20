@@ -17,6 +17,7 @@ set smarttab
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set nobackup
 set textwidth=80
+set hidden " Don't close buffer when window closes
 
 " Go up/down visual lines not by wrappedl lines
 nnoremap j gj
