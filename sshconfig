@@ -33,3 +33,9 @@ Host pynq
   HostName 10.162.177.99
   User xilinx
   PubkeyAuthentication no
+
+Host abrgpu
+  HostName abrgpu.uwaterloo.ca
+  User bmorcos
+  Port 36563
+  PubkeyAuthentication no
