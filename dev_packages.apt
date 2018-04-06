@@ -17,6 +17,7 @@ libxml2-dev
 libxslt1-dev
 libzmq-dev
 make
+minicom
 python-dev
 python-virtualenv
 virtualbox
