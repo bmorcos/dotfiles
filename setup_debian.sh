@@ -84,8 +84,6 @@ if [ "$1" = "-dev" ]; then
     while read p; do
       install_packages $p
     done <dev_packages.apt
-    pip install cpplint
-
 
     VERILATOR=$HOME/git/verilator
     if [[ ! -d $VERILATOR ]]; then
