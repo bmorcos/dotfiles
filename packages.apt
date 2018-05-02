@@ -4,9 +4,7 @@ colordiff
 compiz
 compiz-plugins-extra
 compizconfig-settings-manager
-fonts-cantarell
-fonts-inconsolata
-fonts-takao
+curl
 gdebi
 git
 gparted
@@ -32,7 +30,6 @@ texlive-latex-extra
 texlive-math-extra
 texlive-science
 texlive-xetex
-ttf-mscorefonts-installer
 vim
 vlc
 zsh

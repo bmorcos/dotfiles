@@ -39,3 +39,9 @@ Host abrgpu
   User bmorcos
   Port 36563
   PubkeyAuthentication no
+
+Host windigo
+  HostName 72.141.221.231
+  User ben
+  Port 69
+  PubkeyAuthentication no

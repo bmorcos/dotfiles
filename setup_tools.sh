@@ -11,7 +11,7 @@ package_installed() {
 install_packages() {
     for PACKAGE in "$@"; do
         if ! package_installed "$PACKAGE"; then
-            sudo apt-get --no-install-recommends install "$PACKAGE"
+            sudo apt-get --no-install-recommends -y install "$PACKAGE"
         fi
     done
 }
