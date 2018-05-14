@@ -18,6 +18,7 @@ libgnome2-bin
 libreoffice
 libreoffice-gtk
 lmodern
+python3-pip
 redshift
 redshift-gtk
 simplescreenrecorder
