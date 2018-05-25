@@ -30,7 +30,7 @@
 		"*.sublime-workspace",
 		"*.py.cfg"
 	],
-	"font_size": 11,
+	"font_size": 10,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -44,5 +44,6 @@
 	"tab_size": 4,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+    "rulers": [80]
 }
