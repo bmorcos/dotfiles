@@ -45,3 +45,9 @@ Host windigo
   User ben
   Port 69
   PubkeyAuthentication no
+
+Host phoenix
+  HostName 129.97.45.70
+  User ben
+  Port 1337
+  PubkeyAuthentication no
