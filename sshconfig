@@ -51,3 +51,8 @@ Host phoenix
   User ben
   Port 1337
   PubkeyAuthentication no
+
+Host jetson
+  Hostname nk-jetson.eng.uwaterloo.ca
+  User nvidia
+  PubkeyAuthentication no
