@@ -24,6 +24,13 @@ Host de1
   PubkeyAuthentication no
   Ciphers aes256-ctr
 
+Host de1-remote
+  HostName 129.97.45.70
+  Port 10236
+  User root
+  PubkeyAuthentication no
+  Ciphers aes256-ctr
+
 Host lego
   HostName ev3dev.local
   User robot
@@ -31,6 +38,12 @@ Host lego
 
 Host pynq
   HostName 10.162.177.99
+  User xilinx
+  PubkeyAuthentication no
+
+Host pynq-remote
+  HostName 129.97.45.70
+  Port 10199
   User xilinx
   PubkeyAuthentication no
 
@@ -49,7 +62,7 @@ Host windigo
 Host phoenix
   HostName 129.97.45.70
   User ben
-  Port 1337
+  Port 13370
   PubkeyAuthentication no
 
 Host jetson
