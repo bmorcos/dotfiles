@@ -56,7 +56,7 @@ Host abrgpu
 Host windigo
   HostName 72.141.221.231
   User ben
-  Port 69
+  Port 6969
   PubkeyAuthentication no
 
 Host phoenix
