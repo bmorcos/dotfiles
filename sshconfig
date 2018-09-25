@@ -60,7 +60,7 @@ Host windigo
   PubkeyAuthentication no
 
 Host phoenix
-  HostName 129.97.45.70
+  HostName abrrt.uwaterloo.ca
   User ben
   Port 13370
   PubkeyAuthentication no
