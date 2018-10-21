@@ -31,6 +31,7 @@ if [[ ! -d $MONOKAI ]]; then
     git clone https://github.com/sickill/vim-monokai.git "$MONOKAI"
     checkandlink "$MONOKAI/colors/monokai.vim" "$HOME/.vim/colors/monokai.vim"
 fi
+mkdir -p $HOME/.vim/undofiles
 
 if ! package_installed "google-chrome-stable"; then
     section "Installing Google Chrome"
