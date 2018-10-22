@@ -69,3 +69,9 @@ Host jetson
   Hostname nk-jetson.eng.uwaterloo.ca
   User nvidia
   PubkeyAuthentication no
+
+Host manticore
+  HostName 72.141.221.231
+  User ben
+  Port 7069
+  PubkeyAuthentication no

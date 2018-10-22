@@ -19,6 +19,7 @@ libgnome2-bin
 libreoffice
 libreoffice-gtk
 lmodern
+openssh-server
 python3-pip
 redshift
 redshift-gtk
