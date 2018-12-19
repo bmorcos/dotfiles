@@ -3,6 +3,7 @@ set nocompatible " Don't try and work with vi
 set showmode
 set autoread " Update when file changed externally
 set ruler " cursor location
+set cursorline " highlight current line
 set undolevels=500 " Undo history
 set undofile
 set undodir=~/.vim/undofiles
