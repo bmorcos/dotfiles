@@ -41,9 +41,12 @@
 		"draw_normal",
 		"draw_active"
 	],
+	"rulers":
+	[
+		80
+	],
 	"tab_size": 4,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-    "rulers": [80]
+	"trim_trailing_white_space_on_save": true
 }

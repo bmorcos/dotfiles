@@ -53,6 +53,12 @@ Host abrgpu
   Port 36563
   PubkeyAuthentication no
 
+Host fpgabuild
+  HostName abrgpu.uwaterloo.ca
+  User fpgabuild
+  Port 36563
+  PubkeyAuthentication no
+
 Host windigo
   HostName 72.141.221.231
   User ben

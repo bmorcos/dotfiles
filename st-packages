@@ -12,6 +12,7 @@
 		"SublimeLinter",
 		"SublimeLinter-chktex",
 		"SublimeLinter-cppcheck",
+		"SublimeLinter-cpplint",
 		"SublimeLinter-pep8",
 		"SystemVerilog",
 		"VHDL"
