@@ -8,12 +8,13 @@
 		"AutoPEP8",
 		"LaTeXTools",
 		"Package Control",
+		"sublack",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-chktex",
 		"SublimeLinter-cppcheck",
 		"SublimeLinter-cpplint",
-		"SublimeLinter-pep8",
+		"SublimeLinter-pycodestyle",
 		"SystemVerilog",
 		"VHDL"
 	]
