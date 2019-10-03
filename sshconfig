@@ -53,6 +53,12 @@ Host abrhost
   Port 52413
   ProxyCommand ssh bmorcos@abrgpu.uwaterloo.ca -p 36563 -W %h:%p
 
+Host fpga-ci
+  Hostname abrrt2.uwaterloo.ca
+  User fpga-ci
+  Port 52413
+  ProxyCommand ssh bmorcos@abrgpu.uwaterloo.ca -p 36563 -W %h:%p
+
 Host abrgpu
   HostName abrgpu.uwaterloo.ca
   User bmorcos
