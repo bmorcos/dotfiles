@@ -63,25 +63,21 @@ Host abrgpu
   HostName abrgpu.uwaterloo.ca
   User bmorcos
   Port 36563
-  PubkeyAuthentication no
 
 Host fpgabuild
   HostName abrgpu.uwaterloo.ca
   User fpgabuild
   Port 36563
-  PubkeyAuthentication no
 
 Host windigo
   HostName 72.141.221.231
   User ben
   Port 6969
-  PubkeyAuthentication no
 
 Host phoenix
   HostName abrrt.uwaterloo.ca
   User ben
   Port 13370
-  PubkeyAuthentication no
   ProxyCommand ssh bmorcos@abrgpu.uwaterloo.ca -p 36563 -W %h:%p
 
 Host jetson
@@ -93,4 +89,3 @@ Host manticore
   HostName 72.141.221.231
   User ben
   Port 7069
-  PubkeyAuthentication no
