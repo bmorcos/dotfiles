@@ -9,6 +9,7 @@
   subup = submodule update --init --recursive
   delbr = push origin --delete
   fpush = push --force-with-lease
+  count = rev-list --count HEAD ^origin/master
 
 [color]
   branch = auto
@@ -52,4 +53,4 @@
   prune = true
 
 [core]
-	editor = vi
+  editor = vi
