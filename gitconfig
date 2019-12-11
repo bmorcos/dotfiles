@@ -10,6 +10,7 @@
   delbr = push origin --delete
   fpush = push --force-with-lease
   count = rev-list --count HEAD ^origin/master
+  fixhist = !git rebase -i HEAD~$(git count)
 
 [color]
   branch = auto
