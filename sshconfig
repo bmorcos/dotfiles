@@ -70,7 +70,7 @@ Host fpgabuild
   Port 36563
 
 Host windigo
-  HostName 72.141.221.231
+  HostName 72.141.45.100
   User ben
   Port 6969
 
