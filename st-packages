@@ -7,6 +7,7 @@
 	[
 		"AutoPEP8",
 		"CMake",
+		"Jinja2",
 		"LaTeXTools",
 		"Package Control",
 		"sublack",
