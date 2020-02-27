@@ -39,7 +39,6 @@ Host lego
 Host pynq
   HostName 10.162.177.99
   User xilinx
-  PubkeyAuthentication no
 
 Host pynq-remote
   HostName 129.97.45.70
@@ -89,3 +88,15 @@ Host manticore
   HostName 72.141.221.231
   User ben
   Port 7069
+
+Host abrhost-pynq
+  Hostname 10.42.0.237
+  User xilinx
+  ProxyCommand ssh fpga-ci -W %h:%p
+
+Host abrhost-de1
+  Hostname 10.42.0.236
+  User root
+  Ciphers aes256-ctr
+  ProxyCommand ssh fpga-ci -W %h:%p
+
