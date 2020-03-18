@@ -50,13 +50,13 @@ Host abrhost
   Hostname abrrt2.uwaterloo.ca
   User bmorcos
   Port 52413
-  ProxyCommand ssh bmorcos@abrgpu.uwaterloo.ca -p 36563 -W %h:%p
+  ProxyCommand ssh abrgpu -p 36563 -W %h:%p
 
 Host fpga-ci
   Hostname abrrt2.uwaterloo.ca
   User fpga-ci
   Port 52413
-  ProxyCommand ssh fpgabuild@abrgpu.uwaterloo.ca -p 36563 -W %h:%p
+  ProxyCommand ssh fpgabuild -W %h:%p
 
 Host abrgpu
   HostName abrgpu.uwaterloo.ca
@@ -77,7 +77,7 @@ Host phoenix
   HostName abrrt.uwaterloo.ca
   User ben
   Port 13370
-  ProxyCommand ssh bmorcos@abrgpu.uwaterloo.ca -p 36563 -W %h:%p
+  ProxyCommand ssh abrgpu -W %h:%p
 
 Host jetson
   Hostname nk-jetson.eng.uwaterloo.ca
@@ -99,4 +99,15 @@ Host abrhost-de1
   User root
   Ciphers aes256-ctr
   ProxyCommand ssh fpga-ci -W %h:%p
+
+Host phoenix-pynq
+  Hostname 10.162.177.99
+  User xilinx
+  ProxyCommand ssh phoenix -W %h:%p
+
+Host phoenix-de1
+  Hostname 10.162.177.236
+  User root
+  Ciphers aes256-ctr
+  ProxyCommand ssh phoenix -W %h:%p
 
