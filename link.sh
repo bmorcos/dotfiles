@@ -14,6 +14,7 @@ TARGETS[st-settings]=.config/sublime-text-3/Packages/User/Preferences.sublime-se
 TARGETS[C.sublime-settings]=.config/sublime-text-3/Packages/User/C.sublime-settings
 TARGETS[C++.sublime-settings]=.config/sublime-text-3/Packages/User/C++.sublime-settings
 TARGETS[reStructuredText.sublime-settings]=.config/sublime-text-3/Packages/User/reStructuredText.sublime-settings
+TARGETS[RainbowBrackets.sublime-settings]=.config/sublime-text-3/Packages/User/RainbowBrackets.sublime-settings
 TARGETS[vimrc]=.vimrc
 
 for DOTFILE in "${!TARGETS[@]}"; do

@@ -111,3 +111,23 @@ Host phoenix-de1
   Ciphers aes256-ctr
   ProxyCommand ssh phoenix -W %h:%p
 
+Host phoenix-home
+  HostName 192.168.0.103
+  User ben
+  Port 46615
+
+Host abrgl-ci
+  HostName gl.appliedbrainresearch.com
+  User fpga-ci
+  Port 36563
+
+Host abrgl-pynq
+  HostName 192.168.178.237
+  User xilinx
+  ProxyCommand ssh abrgl-ci -W %h:%p
+
+Host abrgl-de1
+  HostName 192.168.178.236
+  User root
+  Ciphers aes256-ctr
+  ProxyCommand ssh abrgl-ci -W %h:%p

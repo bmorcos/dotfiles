@@ -10,6 +10,7 @@
 		"Jinja2",
 		"LaTeXTools",
 		"Package Control",
+		"RainbowBrackets",
 		"sublack",
 		"SublimeCodeIntel",
 		"SublimeLinter",
