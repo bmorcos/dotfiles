@@ -33,13 +33,14 @@
     },
     "rainbow_colors": {
         "matched": [
-            "#FFFFFF",
-            "#EE77CC",
-            "#77CCEE",
-            "#CCEE77",
-            "#EECC77",
-            "#77EECC",
-            "#CC77EE"
+            "#FFFFFF",  // white
+            "#EE88DD",  // pink
+            "#AA11DD",  // violet
+            "#9977DD",  // purple
+            "#00AADD",  // blue
+            "#99EE77",  // green
+            "#DDAA00",  // orange
+            "#DD6622"   // orange-red
         ],
         "unmatched": "#FF0000"
     }
