@@ -73,6 +73,11 @@ Host windigo
   User ben
   Port 6969
 
+Host windigo-home
+  HostName 192.168.0.101
+  User ben
+  Port 46615
+
 Host phoenix
   HostName abrrt.uwaterloo.ca
   User ben
@@ -88,6 +93,11 @@ Host manticore
   HostName 99.250.162.245
   User ben
   Port 7069
+
+Host manticore-home
+  HostName 192.168.0.102
+  User ben
+  Port 46615
 
 Host abrhost-pynq
   Hostname 10.42.0.237
@@ -131,3 +141,8 @@ Host abrgl-de1
   User root
   Ciphers aes256-ctr
   ProxyCommand ssh abrgl-ci -W %h:%p
+
+Host coral
+  HostName 10.162.177.150
+  User mendel
+
