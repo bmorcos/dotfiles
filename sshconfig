@@ -46,11 +46,16 @@ Host pynq-remote
   User xilinx
   PubkeyAuthentication no
 
+# Host abrhost
+#   Hostname abrrt2.uwaterloo.ca
+#   User bmorcos
+#   Port 52413
+#   ProxyCommand ssh abrgpu -W %h:%p
+
 Host abrhost
-  Hostname abrrt2.uwaterloo.ca
+  Hostname gl.appliedbrainresearch.com
   User bmorcos
   Port 52413
-  ProxyCommand ssh abrgpu -p 36563 -W %h:%p
 
 Host fpga-ci
   Hostname abrrt2.uwaterloo.ca

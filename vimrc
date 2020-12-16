@@ -19,7 +19,7 @@ set expandtab " Use spaces
 set smarttab
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set nobackup
-set textwidth=80
+set textwidth=88
 set hidden " Don't close buffer when window closes
 
 " Go up/down visual lines not by wrappedl lines
@@ -45,3 +45,7 @@ set hlsearch
 " press F8 to turn the search results highlight off
 noremap <F8> :nohl<CR>
 inoremap <F8> <Esc>:nohl<CR>a
+
+" Spellcheck toggle
+noremap <F6> :setlocal spell! spelllang=en_gb<CR>
+inoremap <F6> <C-o>:setlocal spell! spelllang=en_gb<CR>
