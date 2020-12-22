@@ -1,9 +1,13 @@
 autoconf
 bison
+cmake
 cppcheck
 flex
 g++-arm-linux-gnueabihf
 gcc-arm-linux-gnueabihf
+g++-arm-none-eabi
+gcc-arm-none-eabi
+gdb-multiarch
 gfortran
 gperf
 gtkwave

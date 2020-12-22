@@ -2,13 +2,15 @@
 # Adapted from tbekolay's scripts
 source setup_tools.sh
 
+install_packages curl
+
 _PWD=$(pwd)
 section "Welcome to the machine my dude!" "*"
 
 if ! package_installed "sublime-text"; then
     section "Getting Sublime"
-    wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-    echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+    curl -sS https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+    sudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
 
 fi
 
@@ -25,13 +27,16 @@ while read p; do
   install_packages $p
 done <packages.apt
 
-MONOKAI=$HOME/git/vim-monokai
-if [[ ! -d $MONOKAI ]]; then
+section "Detect sensors"
+sudo sensors-detect --auto
+
+MONOKAI="$HOME/git/vim-monokai"
+if [[ ! -d "$MONOKAI" ]]; then
     section "Getting vim colour scheme"
     git clone https://github.com/sickill/vim-monokai.git "$MONOKAI"
     checkandlink "$MONOKAI/colors/monokai.vim" "$HOME/.vim/colors/monokai.vim"
 fi
-mkdir -p $HOME/.vim/undofiles
+mkdir -p "$HOME/.vim/undofiles"
 
 if ! package_installed "google-chrome-stable"; then
     section "Installing Google Chrome"
@@ -49,18 +54,21 @@ if ! package_installed "google-chrome-stable"; then
     rm -f /tmp/chrome.deb
 fi
 
-if ! package_installed "slack-desktop"; then
-    section "Installing Slack"
-    curl -s https://packagecloud.io/install/repositories/slacktechnologies/slack/script.deb.sh | sudo bash
-fi
+section "Installing Slack"
+sudo snap install slack --classic
 
-section "Installing Anaconda"
-cd $HOME/Downloads
-curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh | sudo bash
-cd $_PWD
+section "Installing Discord"
+sudo snap install discord
+
+section "Installing VLC"
+sudo snap install vlc
+
+section "Installing Miniconda"
+wget -O /tmp/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sudo bash /tmp/miniconda.sh
 
 section "Linking dotfiles"
-source link.sh
+sudo source link.sh
 
 section "Setting up zsh"
 install_packages zsh
@@ -70,7 +78,7 @@ if [[ $(grep "$USER" /etc/passwd) != */bin/zsh ]]; then
 fi
 
 section "Setting up antigen"
-if [[ ! -d $HOME/.zsh-antigen ]]; then
+if [[ ! -d "$HOME/.zsh-antigen" ]]; then
     git clone https://github.com/bmorcos/zsh-antigen.git "$HOME/.zsh-antigen"
     cd "$HOME/.zsh-antigen"
     git subup
@@ -86,12 +94,12 @@ if [ "$1" = "-dev" ]; then
       install_packages $p
     done <dev_packages.apt
 
-    VERILATOR=$HOME/git/verilator
-    if [[ ! -d $VERILATOR ]]; then
+    VERILATOR="$HOME/git/verilator"
+    if [[ ! -d "$VERILATOR" ]]; then
         section "Installing Verilator"
         git clone http://git.veripool.org/git/verilator "$VERILATOR"
         unset VERILATOR_ROOT  # For bash
-        cd $VERILATOR
+        cd "$VERILATOR"
         git pull
         autoconf        # Create ./configure script
         ./configure
@@ -100,11 +108,11 @@ if [ "$1" = "-dev" ]; then
         cd $_PWD
     fi
 
-    IVERILOG=$HOME/git/iverilog
-    if [[ ! -d $IVERILOG ]]; then
+    IVERILOG="$HOME/git/iverilog"
+    if [[ ! -d "$IVERILOG" ]]; then
         section "Installing iverilog"
         git clone https://github.com/steveicarus/iverilog.git "$IVERILOG"
-        cd $IVERILOG
+        cd "$IVERILOG"
         git pull
         sh autoconf.sh
         ./configure
