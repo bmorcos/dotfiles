@@ -11,6 +11,7 @@
   fpush = push --force-with-lease
   count = rev-list --count HEAD ^origin/master
   fixhist = !git rebase -i HEAD~$(git count)
+  mergeff = merge --ff-only
 
 [color]
   branch = auto
