@@ -148,6 +148,6 @@ Host abrgl-de1
   ProxyCommand ssh abrgl-ci -W %h:%p
 
 Host coral
-  HostName 10.162.177.150
+  HostName 10.162.177.214
   User mendel
 
