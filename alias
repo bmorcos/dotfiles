@@ -3,4 +3,5 @@ alias diff="colordiff"
 alias plz="sudo"
 alias nengo_fpga="nengo -b nengo_fpga"
 alias rm="rm -I"
+alias jn="jupyter-notebook"
 
