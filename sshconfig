@@ -58,10 +58,11 @@ Host abrhost
   Port 52413
 
 Host fpga-ci
-  Hostname abrrt2.uwaterloo.ca
+#  Hostname abrrt2.uwaterloo.ca
+  Hostname gl.appliedbrainresearch.com
   User fpga-ci
   Port 52413
-  ProxyCommand ssh fpgabuild -W %h:%p
+#  ProxyCommand ssh fpgabuild -W %h:%p
 
 Host abrgpu
   HostName abrgpu.uwaterloo.ca

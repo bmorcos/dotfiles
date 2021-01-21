@@ -38,9 +38,15 @@
   old = red bold
   new = green bold
   whitespace = red reverse
+  oldMoved = red dim
+  newMoved = green dim
+  oldMovedAlternative = red
+  newMovedAlternative = green
 
 [diff]
   mnemonicprefix = True
+  colorMoved = zebra
+  colorMovedWS = allow-indentation-change
 
 [rebase]
   autosquash = true
