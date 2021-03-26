@@ -65,7 +65,8 @@
                 "extensions": [
                     "c",
                     "h",
-                    "cpp"
+                    "cpp",
+                    "cc"
                 ]
             }
         }

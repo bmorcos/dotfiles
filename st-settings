@@ -30,7 +30,7 @@
 		"*.sublime-workspace",
 		"*.py.cfg"
 	],
-	"font_size": 10,
+	"font_size": 9,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -43,7 +43,8 @@
 	],
 	"rulers":
 	[
-		80
+		80,
+		88
 	],
 	"tab_size": 4,
 	"theme": "Adaptive.sublime-theme",
