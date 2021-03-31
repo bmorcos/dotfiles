@@ -1,4 +1,4 @@
-alias go="gnome-open"
+alias go="xdg-open"
 alias diff="colordiff"
 alias plz="sudo"
 alias nengo_fpga="nengo -b nengo_fpga"
