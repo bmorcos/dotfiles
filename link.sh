@@ -17,6 +17,7 @@ TARGETS[reStructuredText.sublime-settings]=.config/sublime-text-3/Packages/User/
 TARGETS[RainbowBrackets.sublime-settings]=.config/sublime-text-3/Packages/User/RainbowBrackets.sublime-settings
 TARGETS[vimrc]=.vimrc
 TARGETS[remove_base_ps1.sh]=miniconda3/etc/conda/activate.d/remove_base_ps1.sh
+TARGETS[stream_audio.sh]=stream_audio.sh
 
 for DOTFILE in "${!TARGETS[@]}"; do
     SRC="$PWD/$DOTFILE"
