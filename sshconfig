@@ -46,32 +46,44 @@ Host pynq-remote
   User xilinx
   PubkeyAuthentication no
 
-# Host abrhost
-#   Hostname abrrt2.uwaterloo.ca
-#   User bmorcos
-#   Port 52413
-#   ProxyCommand ssh abrgpu -W %h:%p
-
-Host abrhost
-  Hostname gl.appliedbrainresearch.com
+Host abrghost
+  Hostname gci.appliedbrainresearch.com
   User bmorcos
-  Port 52413
+  Port 38083
 
-Host fpga-ci
-#  Hostname abrrt2.uwaterloo.ca
-  Hostname gl.appliedbrainresearch.com
-  User fpga-ci
-  Port 52413
-#  ProxyCommand ssh fpgabuild -W %h:%p
+Host abrgpu1
+  Hostname gci.appliedbrainresearch.com
+  User bmorcos
+  Port 38183
 
-Host abrgpu
-  HostName abrgpu.uwaterloo.ca
+Host abrgpu2
+  Hostname gci.appliedbrainresearch.com
+  User bmorcos
+  Port 38283
+
+Host abrci
+  Hostname gci.appliedbrainresearch.com
   User bmorcos
   Port 36563
 
+Host abrdhost
+  Hostname gci.appliedbrainresearch.com
+  User bmorcos@gci.abr
+  Port 39093
+
+Host abrhost
+  HostName 173.33.164.148
+  User bmorcos
+  Port 52413
+
 Host fpgabuild
-  HostName abrgpu.uwaterloo.ca
+  HostName gci.appliedbrainresearch.com
   User fpgabuild
+  Port 38083
+
+Host fpga-ci
+  Hostname gci.appliedbrainresearch.com
+  User fpga-ci
   Port 36563
 
 Host windigo
@@ -85,10 +97,9 @@ Host windigo-home
   Port 46615
 
 Host phoenix
-  HostName abrrt.uwaterloo.ca
+  HostName 99.250.162.245
   User ben
-  Port 13370
-  ProxyCommand ssh abrgpu -W %h:%p
+  Port 7070
 
 Host jetson
   Hostname nk-jetson.eng.uwaterloo.ca
