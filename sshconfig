@@ -61,6 +61,11 @@ Host abrgpu2
   User bmorcos
   Port 38283
 
+Host travis-ci
+  Hostname gci.appliedbrainresearch.com
+  User travis-ci
+  Port 36563
+
 Host abrci
   Hostname gci.appliedbrainresearch.com
   User bmorcos
@@ -76,15 +81,15 @@ Host abrhost
   User bmorcos
   Port 52413
 
+Host fpga-ci
+  HostName 173.33.164.148
+  User fpga-ci
+  Port 52413
+
 Host fpgabuild
   HostName gci.appliedbrainresearch.com
   User fpgabuild
   Port 38083
-
-Host fpga-ci
-  Hostname gci.appliedbrainresearch.com
-  User fpga-ci
-  Port 36563
 
 Host windigo
   HostName 99.250.162.245
