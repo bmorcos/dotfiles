@@ -7,6 +7,7 @@
 	[
 		"AutoPEP8",
 		"CMake",
+		"GraphQL",
 		"Jinja2",
 		"LaTeXTools",
 		"Package Control",
@@ -19,6 +20,6 @@
 		"SublimeLinter-cpplint",
 		"SublimeLinter-pycodestyle",
 		"SystemVerilog",
-		"VHDL"
-	]
+		"VHDL",
+	],
 }
