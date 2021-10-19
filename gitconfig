@@ -9,7 +9,8 @@
   subup = submodule update --init --recursive
   delbr = push origin --delete
   fpush = push --force-with-lease
-  count = rev-list --count HEAD ^origin/master
+  master-branch = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
+  count = !git rev-list --count HEAD ^origin/$(git master-branch)
   fixhist = !git rebase -i HEAD~$(git count)
   mergeff = merge --ff-only
 
