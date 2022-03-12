@@ -7,8 +7,10 @@
 	[
 		"AutoPEP8",
 		"CMake",
+		"ESLint-Formatter",
 		"GraphQL",
 		"Jinja2",
+		"JsPrettier",
 		"LaTeXTools",
 		"Package Control",
 		"RainbowBrackets",
