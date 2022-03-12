@@ -1,3 +1,4 @@
+alias upuprm="sudo apt update && sudo apt upgrade && sudo apt autoremove"
 alias go="xdg-open"
 alias diff="colordiff"
 alias plz='echo ">> sudo $(fc -ln -1)"; sudo $SHELL -c "$(fc -ln -1)"'
