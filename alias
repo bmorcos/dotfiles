@@ -1,6 +1,7 @@
 alias upuprm="sudo apt update && sudo apt upgrade && sudo apt autoremove"
-alias go="xdg-open"
+alias open="xdg-open"
 alias diff="colordiff"
+alias gdiff="git diff --no-index"
 alias plz='echo ">> sudo $(fc -ln -1)"; sudo $SHELL -c "$(fc -ln -1)"'
 alias nengo_fpga="nengo -b nengo_fpga"
 alias rm="rm -I"
@@ -12,4 +13,34 @@ mkdircd ()
 {
     mkdir -p -- "$1" &&
     cd -P -- "$1"
+}
+
+# Hack for coloured go test output
+# Based on https://stackoverflow.com/a/27245610
+gocolour () {
+    sed ''/PASS/s//$(printf "\033[32mPASS\033[0m")/'' \
+    | sed ''/FAIL/s//$(printf "\033[31mFAIL\033[0m")/'' \
+    | sed ''/RUN/s//$(printf "\033[35mRUN\033[0m")/'' \
+    | sed ''/"no test files"/s//$(printf "\033[33mno_test_files\033[0m")/'' \
+    | sed ''/cached/s//$(printf "\033[36mcached\033[0m")/''
+}
+
+# kubernetes
+alias k="kubectl"
+
+# Set the namespace for ease of use and PS1
+kns () {
+    if [[ -n "$1" ]]; then
+        alias k="kubectl -n $1" &&
+    else
+        alias k="kubectl" &&
+    fi
+    export KNS="$1"
+}
+
+# Clear kubernetes config and ns
+kclear () {
+    export KUBECONFIG="" &&
+    export KNS="" &&
+    alias k="kubectl"
 }

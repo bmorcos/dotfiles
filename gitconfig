@@ -12,7 +12,10 @@
   master-branch = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
   count = !git rev-list --count HEAD ^origin/$(git master-branch)
   fixhist = !git rebase -i HEAD~$(git count)
-  mergeff = merge --ff-only
+  main = !git checkout $(git master-branch)
+  dm = !git diff origin/$(git master-branch)
+  dr = !git diff origin/$(git branch --show-current)
+  update = !git fetch && git rebase origin/$(git master-branch)
 
 [color]
   branch = auto
@@ -63,3 +66,7 @@
 
 [core]
   editor = vi
+
+[merge]
+  conflictstyle = diff3
+  ff = only
