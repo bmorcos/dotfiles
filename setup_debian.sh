@@ -14,10 +14,10 @@ if ! package_installed "sublime-text"; then
 
 fi
 
-if ! package_installed "simplescreenrecorder"; then
-    section "Getting Simple Screen recorder"
-    sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
-fi
+# if ! package_installed "simplescreenrecorder"; then
+#     section "Getting Simple Screen recorder"
+#     sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
+# fi
 
 section "Installing Packages"
 echo "--- Update package lists"
@@ -54,8 +54,8 @@ if ! package_installed "google-chrome-stable"; then
     rm -f /tmp/chrome.deb
 fi
 
-section "Installing Slack"
-sudo snap install slack --classic
+# section "Installing Slack"
+# sudo snap install slack --classic
 
 section "Installing Discord"
 sudo snap install discord
@@ -68,7 +68,7 @@ wget -O /tmp/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-
 sudo bash /tmp/miniconda.sh
 
 section "Linking dotfiles"
-sudo source link.sh
+source ./link.sh
 
 section "Setting up zsh"
 install_packages zsh
@@ -121,6 +121,9 @@ if [ "$1" = "-dev" ]; then
         cd $_PWD
     fi
 fi
+
+section "unity"
+sudo apt install ubuntu-unity-desktop
 
 section "Upgrade Packages"
 sudo apt full-upgrade

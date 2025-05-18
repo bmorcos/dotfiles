@@ -12,12 +12,10 @@ gparted
 indicator-multiload
 inkscape
 kdenlive
-latex-beamer
-latex-xcolor
 libav-tools
 libgnome2-bin
 libreoffice
-libreoffice-gtk
+libreoffice-gnome
 lm-sensors
 lmodern
 openssh-server
@@ -31,11 +29,10 @@ texlive
 texlive-fonts-extra
 texlive-humanities
 texlive-latex-extra
-texlive-math-extra
+texlive-latex-recommended
 texlive-science
 texlive-xetex
 tree
-ubuntu-unity-desktop
 vim
 wget
 zsh
