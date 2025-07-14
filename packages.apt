@@ -5,6 +5,7 @@ compiz
 compiz-plugins-extra
 compizconfig-settings-manager
 curl
+fonts-roboto
 gdebi
 geoclue-2.0
 git
@@ -18,6 +19,7 @@ libreoffice
 libreoffice-gnome
 lm-sensors
 lmodern
+make
 openssh-server
 python3-pip
 redshift
