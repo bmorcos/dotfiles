@@ -10,6 +10,7 @@ fonts-roboto
 gdebi
 geoclue-2.0
 git
+gnome-shell-extension-manager
 gparted
 indicator-multiload
 inkscape
@@ -29,6 +30,7 @@ simplescreenrecorder
 sublime-text
 tex-gyre
 texlive
+texlive-bibtex-extra
 texlive-fonts-extra
 texlive-humanities
 texlive-latex-extra

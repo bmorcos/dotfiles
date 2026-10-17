@@ -122,8 +122,12 @@ if [ "$1" = "-dev" ]; then
     fi
 fi
 
+section "quirks"
+# re-enable middle button paste
+gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
+
 section "unity"
-sudo apt install ubuntu-unity-desktop
+sudo apt install ubuntu-unity-desktop xserver-xorg-core xserver-xorg xinit
 
 section "Upgrade Packages"
 sudo apt full-upgrade
